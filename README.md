@@ -1,4 +1,4 @@
-# 🎟️ Ticket Studio Pro
+<h1 align="center">🎟️ Ticket Studio Pro</h1>
 
 <div align="center">
 
