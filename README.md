@@ -1,103 +1,94 @@
 # 🎟️ Ticket Studio Pro
 
-<p align="center">
-  <img src="logo.png" alt="Ticket Studio Pro Logo" width="120" style="border-radius: 24px;">
-</p>
+<div align="center">
 
-<p align="center">
-  <b>Sistema de Punto de Venta (POS) & Generador de Tickets Térmicos de 80mm</b>
-</p>
+  <img src="assets/logo.png" alt="Ticket Studio Pro Logo" width="140" />
 
-<p align="center">
-  <a href="#-características-principales">Características</a> •
-  <a href="#-capturas-de-pantalla">Capturas</a> •
-  <a href="#-tecnologías-utilizadas">Tecnologías</a> •
-  <a href="#-instalación">Instalación</a> •
-  <a href="#-licencia">Licencia</a>
-</p>
+  ### **Sistema POS de Escritorio & Generación de Tickets Térmicos**
+  *Una solución rápida, moderna y 100% offline diseñada para el control total de ventas e inventario.*
+
+  [![Demo Live](https://img.shields.io/badge/🌐_Landing_Page-Ver_Demostración-2563eb?style=for-the-badge)](https://FlixForge.github.io/TicketStudioPro/)
+  [![Estado](https://img.shields.io/badge/Estado-Demostración_Oficial-blue?style=for-the-badge)](#)
+  [![Licencia](https://img.shields.io/badge/Licencia-MIT-green?style=for-the-badge)](#)
+
+</div>
 
 ---
 
 ## 📌 Descripción General
 
-**Ticket Studio Pro** es una aplicación de escritorio moderna, rápida y 100% offline diseñada para simplificar el cobro, la gestión de productos y la emisión de tickets térmicos en pequeños y medianos negocios.
+**Ticket Studio Pro** es un sistema de Punto de Venta (POS) de escritorio con interfaz oscura moderna, rápida y adaptable. Está pensado para pequeños y medianos comercios que buscan emitir tickets de compra impresos o digitales en segundos, gestionar productos con código de barras y llevar un control claro de sus ingresos.
 
-Desarrollada con un diseño oscuro elegante y con acentos azul neón, la aplicación permite cobros inmediatos, generación instantánea de tickets en **PDF** o **PNG** con código QR personalizado y lectura/creación de códigos de barra **EAN-13**.
+Este repositorio corresponde a la **versión de demostración del software y presentación del proyecto**.
 
 ---
 
 ## ✨ Características Principales
 
-- 🚀 **Módulo de Venta Inmediata:** Cobro rápido con atajos de billetes (`+$50`, `+$100`, etc.), búsqueda instantánea por SKU o nombre y panel táctil de productos favoritos.
-- 📄 **Tickets de 80mm en Tiempo Real:** Previsualización dinámica del recibo e impresión térmica instantánea. Exporta también en archivo **PDF** o imagen **PNG**.
-- 🏷️ **Catálogo & Generador EAN-13:** Control de inventarios con stock mínimo (alertas), cálculo automático de margen de beneficio y generador interno de códigos de barras.
-- 📊 **Historial & Exportación CSV:** Consulta de ingresos por fecha (Efectivo, Tarjeta, Transferencia), control de IVA retenido y exportación directa de reportes a Excel/CSV.
-- 🎨 **Personalización Comercial:** Define tu logotipo, datos de la empresa (RFC/NIT), dirección, mensaje al pie de página y QR dinámico con redirección a Google Maps o redes sociales.
-- 🔒 **100% Offline & Privado:** Todos tus registros permanecen en tu equipo mediante una base de datos local SQLite. Sin suscripciones ni conexión a internet obligatoria.
+* 🚀 **Módulo de Venta Inmediata:** Cobro fluido en caja con calculo de cambio instantáneo, atajos rápidos de efectivo (`+$50`, `+$100`, etc.), acceso táctil a productos favoritos y búsqueda por lector de código de barras.
+* 📄 **Tickets Termales de 80mm:** Renderizado en tiempo real de recibos con soporte para exportación directa a **PDF** o imágenes **PNG** de alta calidad.
+* 🏷️ **Catálogo de Productos & Generador EAN-13:** Control de inventarios con sistema de alerta de stock mínimo, calculador automático de margen de ganancias e integración de generador de código de barras estándar **EAN-13**.
+* 📊 **Historial Comercial & Exportación CSV:** Filtros de ingresos por rango de fechas, resumen de métodos de pago (Efectivo, Tarjeta, Transferencia), control de IVA retenido y exportación directa de reportes a Excel/CSV.
+* 🎨 **Personalización Total:** Incorpora el logotipo de tu marca, datos fiscales (RFC/NIT), dirección, mensaje al pie de página y un **código QR dinámico** con enlace a Google Maps o redes sociales.
+* 🔒 **100% Offline & Privado:** Arquitectura local basada en SQLite. Sin cobros mensuales ni dependencia de conexión a internet.
 
 ---
 
-## 📸 Capturas de Pantalla
+## 📸 Capturas de Pantalla e Interfaz
 
 ### 🛒 1. Módulo de Venta POS
-Vista principal optimizada para agilizar los cobros en caja con cálculo automático de cambio.
-![Módulo de Venta](Pestaña%20Venta.png)
+> Interfaz optimizada para agilizar cobros continuos, selección rápida de productos y previsualización en tiempo real del ticket térmico.
+
+![Módulo de Venta](assets/venta.png)
+
+---
 
 ### 📦 2. Catálogo e Inventario
-Administración clara con estados de stock en color verde/rojo según alertas.
-![Catálogo e Inventario](Pestaña%20Catalogo.png)
+> Vista de productos con indicadores visuales de stock, filtrado por categorías y vista previa del ticket comercial.
 
-### ➕ Formulario de Producto con EAN-13
-Generación automática de códigos de barras EAN-13 estándar para tus productos.
-![Nuevo Producto](Pestaña%20Catalogo%20Ventana.png)
-
-### 📈 3. Historial de Ventas & Totales
-Revisión rápida de folios emitidos y filtros por rango de fechas.
-![Historial de Ventas](Pestaña%20Historil.png)
-
-### ⚙️ 4. Configuración & Estilo del Ticket
-Carga de logo, pie de página, tamaño de papel y fuentes tipográficas.
-![Configuración del Ticket](Configuracion.png)
+![Catálogo e Inventario](assets/catalogo.png)
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+### ➕ 3. Formulario de Producto & Creador de Código de Barras EAN-13
+> Alta de artículos con cálculo de margen estimado, definición de stock mínimo para alertas y generador automático de código EAN-13.
 
-- **Lenguaje:** Python 3.x
-- **Interfaz Gráfica:** PyQt6 / PySide6
-- **Base de Datos:** SQLite 3
-- **Librerías de Ticket:** ReportLab (PDF) / Pillow (PNG) / QRCodegen
-- **Empaquetado:** PyInstaller + Inno Setup
+<div align="center">
+  <img src="assets/catalogo_ventana.png" alt="Nuevo Producto" width="650" />
+</div>
 
 ---
 
-## 🚀 Instalación y Uso Local
+### 📈 4. Historial de Ventas & Totales
+> Consulta de transacciones pasadas, desglose por IVA retenido, métodos de pago y exportación de reportes tabulares a CSV.
 
-### Prerrequisitos
-- Python 3.10 o superior instalado.
+![Historial de Ventas](assets/historial.png)
 
-### Clonar e instalar dependencias
+---
 
-```bash
-# Clonar el repositorio
-git clone https://github.com/tu-usuario/ticket-studio-pro.git
+### ⚙️ 5. Configuración Comercial & Estilo del Ticket
+> Configuración completa de la identidad del negocio: carga de logotipo, dirección, QR personalizado, fuentes y tamaño de papel.
 
-# Entrar al directorio
-cd ticket-studio-pro
+![Configuración](assets/configuracion.png)
 
-# Crear un entorno virtual (opcional pero recomendado)
-python -m venv venv
-source venv/bin/activate  # En Windows usa: venv\Scripts\activate
+---
 
-# Instalar requerimientos
-pip install -r requirements.txt
+## 🛠️ Stack Tecnológico
 
-# Ejecutar la aplicación
-python main.py
-```
+* **Lenguaje Principal:** Python 3.x
+* **Interfaz Gráfica:** PyQt6 / PySide6 (Tema Oscuro Personalizado)
+* **Base de Datos Local:** SQLite 3
+* **Generación de Documentos:** ReportLab (Motor PDF) & Pillow (Exportación PNG)
+* **Generador QR & Códigos:** QRCodegen & Python-Barcode
 
 ---
 
 ## 📄 Licencia
 
-Este proyecto se distribuye bajo la licencia **MIT**. Puedes consultar el archivo `LICENSE` para obtener más información.
+Este proyecto y sus materiales de demostración están bajo la Licencia **MIT**. Consulta el archivo `LICENSE` para más información.
+
+<div align="center">
+
+Desarrollado para demostración técnica de **Ticket Studio Pro**.
+
+</div>
