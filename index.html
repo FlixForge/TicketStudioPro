@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Studio Pro - Sistema POS & Gestión de Tickets Termales</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            900: '#1e3a8a',
+                            dark: '#0a0d14',
+                            card: '#121824',
+                            border: '#1e293b'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0d14;
+            color: #f1f5f9;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(37, 99, 235, 0.35);
+        }
+        .glow-card:hover {
+            box-shadow: 0 0 25px -5px rgba(59, 130, 246, 0.3);
+            border-color: #3b82f6;
+        }
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-slate-100 antialiased selection:bg-brand-600 selection:text-white relative bg-grid min-h-screen">
+
+    <header class="fixed top-0 left-0 w-full z-50 bg-brand-dark/80 backdrop-blur-md border-b border-brand-border/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-700 to-brand-500 p-2 shadow-lg shadow-brand-600/30 flex items-center justify-center">
+                        <i class="fa-solid fa-receipt text-xl text-white"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-bold tracking-tight text-white">Ticket Studio <span class="text-brand-500">Pro</span></span>
+                        <span class="block text-[10px] text-slate-400 font-medium tracking-widest uppercase">Punto de Venta</span>
+                    </div>
+                </div>
+
+                <!-- Nav Desktop -->
+                <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                    <a href="#caracteristicas" class="hover:text-brand-500 transition-colors">Características</a>
+                    <a href="#capturas" class="hover:text-brand-500 transition-colors">Capturas</a>
+                    <a href="#especificaciones" class="hover:text-brand-500 transition-colors">Especificaciones</a>
+                </nav>
+
+                <!-- CTA -->
+                <div class="hidden sm:flex items-center gap-4">
+                    <a href="https://github.com" target="_blank" class="px-5 py-2.5 rounded-xl bg-brand-card hover:bg-slate-800 text-slate-200 border border-brand-border font-medium text-sm transition-all duration-200 flex items-center gap-2">
+                        <i class="fa-brands fa-github text-lg"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="#descarga" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-600 to-brand-500 hover:from-brand-500 hover:to-brand-600 text-white font-semibold text-sm shadow-lg shadow-brand-600/25 transition-all duration-200">
+                        Obtener App
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+        <!-- Background Radial Glow -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-600/15 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <!-- Badges -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-500/30 text-brand-500 text-xs font-semibold uppercase tracking-wider mb-8 shadow-inner">
+                <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+                Software POS de Escritorio Offline
+            </div>
+
+            <!-- Main Title -->
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold text-white tracking-tight leading-none mb-6">
+                Control total de tu negocio con <br class="hidden sm:inline"/>
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-brand-500 via-blue-400 to-indigo-400">Tickets Profesionales</span>
+            </h1>
+
+            <p class="max-w-2xl mx-auto text-slate-400 text-base sm:text-lg md:text-xl font-normal leading-relaxed mb-10">
+                Diseñado para agilizar ventas, gestionar tu inventario con códigos de barra y generar e imprimir tickets termales de 80mm de forma instantánea. 100% privado y rápido.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+                <a href="#descarga" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-brand-600 to-brand-500 hover:from-brand-500 hover:to-brand-600 text-white font-bold text-base shadow-xl shadow-brand-600/30 transition-all duration-200 flex items-center justify-center gap-3 group">
+                    <i class="fa-solid fa-download group-hover:translate-y-0.5 transition-transform"></i>
+                    Descargar Instalador (Windows)
+                </a>
+                <a href="#capturas" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-card hover:bg-slate-800 text-slate-200 border border-brand-border font-semibold text-base transition-all duration-200 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-circle-play text-brand-500"></i>
+                    Ver Demostración
+                </a>
+            </div>
+
+            <!-- App Screen Preview Mockup -->
+            <div class="relative max-w-5xl mx-auto rounded-2xl border border-brand-border/80 bg-brand-card/90 p-2 sm:p-4 glow-effect shadow-2xl">
+                <div class="flex items-center justify-between px-3 py-2 border-b border-brand-border/60 mb-3">
+                    <div class="flex items-center gap-2">
+                        <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
+                        <span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
+                        <span class="w-3 h-3 rounded-full bg-green-500/80 inline-block"></span>
+                    </div>
+                    <span class="text-xs text-slate-400 font-mono">Ticket Studio Pro - Vista Principal (Venta)</span>
+                    <div class="w-12"></div>
+                </div>
+                <div class="overflow-hidden rounded-xl bg-slate-950 border border-brand-border/40 aspect-video relative flex items-center justify-center">
+                    <img src="Pestaña Venta.png" alt="Ticket Studio Pro - Venta" class="w-full h-full object-cover object-top" onerror="this.onerror=null; this.src='https://placehold.co/1200x675/0f172a/3b82f6?text=Ticket+Studio+Pro+-+Vista+de+Venta';">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="caracteristicas" class="py-20 md:py-32 border-t border-brand-border/40 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-500 mb-3">Capacidades del Sistema</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Todo lo que necesitas para operar tu negocio sin complicaciones</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-brand-card p-8 rounded-2xl border border-brand-border/60 transition-all duration-300 glow-card flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brand-600/10 border border-brand-500/20 text-brand-500 flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Ventas Rápidas & Favoritos</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Punto de venta fluido con atajos rápidos de dinero, búsqueda directa por SKU/código y lista dinámica de productos frecuentes.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-brand-border/40 text-xs font-semibold text-brand-500 flex items-center gap-1">
+                        <span>Cobro instantáneo en efectivo y tarjetas</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-brand-card p-8 rounded-2xl border border-brand-border/60 transition-all duration-300 glow-card flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brand-600/10 border border-brand-500/20 text-brand-500 flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-receipt"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Tickets de 80mm con QR</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Generación e impresión térmica en tiempo real. Exporta copias oficiales en PDF o imágenes PNG con código QR personalizable.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-brand-border/40 text-xs font-semibold text-brand-500 flex items-center gap-1">
+                        <span>Formato dinámico listo para imprimir</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-brand-card p-8 rounded-2xl border border-brand-border/60 transition-all duration-300 glow-card flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brand-600/10 border border-brand-500/20 text-brand-500 flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-barcode"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Catálogo & Generador EAN-13</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Gestión integral de productos, stock con alertas mínimas, cálculo automático de margen y generador interno de códigos de barra EAN-13.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-brand-border/40 text-xs font-semibold text-brand-500 flex items-center gap-1">
+                        <span>Control de inventario sin errores</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="bg-brand-card p-8 rounded-2xl border border-brand-border/60 transition-all duration-300 glow-card flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brand-600/10 border border-brand-500/20 text-brand-500 flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Historial & Reportes CSV</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Visualiza tus ventas totales, cobros en efectivo, transferencias y retención de impuestos con filtros por rangos de fecha y exportación a CSV.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-brand-border/40 text-xs font-semibold text-brand-500 flex items-center gap-1">
+                        <span>Cierres de caja ordenados</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="bg-brand-card p-8 rounded-2xl border border-brand-border/60 transition-all duration-300 glow-card flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brand-600/10 border border-brand-500/20 text-brand-500 flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-sliders"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Personalización Comercial</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Sube el logo de tu empresa, configura datos fiscales (RFC/NIT), eslogan, prefijos de folio, fuentes y protección por contraseña.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-brand-border/40 text-xs font-semibold text-brand-500 flex items-center gap-1">
+                        <span>Tu marca en cada recibo</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="bg-brand-card p-8 rounded-2xl border border-brand-border/60 transition-all duration-300 glow-card flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-brand-600/10 border border-brand-500/20 text-brand-500 flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">100% Offline y Seguro</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Tus datos se guardan en una base de datos SQLite local. Sin cuotas mensuales, sin depender de conexión a internet ni servidores de terceros.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-brand-border/40 text-xs font-semibold text-brand-500 flex items-center gap-1">
+                        <span>Privacidad y autonomía total</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="capturas" class="py-20 md:py-32 bg-slate-950/60 border-t border-brand-border/40 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-500 mb-3">Interfaz del Sistema</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Diseñado para ser intuitivo y eficiente</p>
+            </div>
+
+            <!-- Tabs Navigation -->
+            <div class="flex flex-wrap items-center justify-center gap-2 mb-10">
+                <button onclick="switchTab('tab-venta')" id="btn-tab-venta" class="tab-btn px-6 py-2.5 rounded-xl font-medium text-sm transition-all bg-brand-600 text-white shadow-lg shadow-brand-600/30">
+                    <i class="fa-solid fa-cash-register mr-2"></i>Módulo de Venta
+                </button>
+                <button onclick="switchTab('tab-catalogo')" id="btn-tab-catalogo" class="tab-btn px-6 py-2.5 rounded-xl font-medium text-sm transition-all bg-brand-card hover:bg-slate-800 text-slate-300 border border-brand-border">
+                    <i class="fa-solid fa-boxes-stacked mr-2"></i>Catálogo
+                </button>
+                <button onclick="switchTab('tab-ventana')" id="btn-tab-ventana" class="tab-btn px-6 py-2.5 rounded-xl font-medium text-sm transition-all bg-brand-card hover:bg-slate-800 text-slate-300 border border-brand-border">
+                    <i class="fa-solid fa-plus-circle mr-2"></i>Nuevo Producto
+                </button>
+                <button onclick="switchTab('tab-historial')" id="btn-tab-historial" class="tab-btn px-6 py-2.5 rounded-xl font-medium text-sm transition-all bg-brand-card hover:bg-slate-800 text-slate-300 border border-brand-border">
+                    <i class="fa-solid fa-clock-rotate-left mr-2"></i>Historial
+                </button>
+                <button onclick="switchTab('tab-config')" id="btn-tab-config" class="tab-btn px-6 py-2.5 rounded-xl font-medium text-sm transition-all bg-brand-card hover:bg-slate-800 text-slate-300 border border-brand-border">
+                    <i class="fa-solid fa-gear mr-2"></i>Configuración
+                </button>
+            </div>
+
+            <!-- Interactive Tab Content Container -->
+            <div class="relative max-w-5xl mx-auto rounded-2xl border border-brand-border bg-brand-card overflow-hidden shadow-2xl">
+                <!-- Tab Venta -->
+                <div id="tab-venta" class="tab-content block">
+                    <img src="Pestaña Venta.png" alt="Módulo de Venta" class="w-full h-auto object-cover" onerror="this.onerror=null; this.src='https://placehold.co/1200x675/0f172a/3b82f6?text=Módulo+de+Venta';">
+                </div>
+
+                <!-- Tab Catalogo -->
+                <div id="tab-catalogo" class="tab-content hidden">
+                    <img src="Pestaña Catalogo.png" alt="Módulo de Catálogo" class="w-full h-auto object-cover" onerror="this.onerror=null; this.src='https://placehold.co/1200x675/0f172a/3b82f6?text=Catálogo+de+Productos';">
+                </div>
+
+                <!-- Tab Ventana -->
+                <div id="tab-ventana" class="tab-content hidden flex items-center justify-center bg-slate-950 p-6 md:p-12">
+                    <img src="Pestaña Catalogo Ventana.png" alt="Nuevo Producto Modal" class="max-w-lg w-full h-auto rounded-xl border border-brand-border shadow-2xl" onerror="this.onerror=null; this.src='https://placehold.co/600x600/0f172a/3b82f6?text=Formulario+de+Producto';">
+                </div>
+
+                <!-- Tab Historial -->
+                <div id="tab-historial" class="tab-content hidden">
+                    <img src="Pestaña Historil.png" alt="Historial de Ventas" class="w-full h-auto object-cover" onerror="this.onerror=null; this.src='https://placehold.co/1200x675/0f172a/3b82f6?text=Historial+de+Ventas';">
+                </div>
+
+                <!-- Tab Configuracion -->
+                <div id="tab-config" class="tab-content hidden">
+                    <img src="Configuracion.png" alt="Configuración del Sistema" class="w-full h-auto object-cover" onerror="this.onerror=null; this.src='https://placehold.co/1200x675/0f172a/3b82f6?text=Ajustes+y+Ticket';">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="especificaciones" class="py-20 md:py-32 border-t border-brand-border/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-brand-500 mb-3">Arquitectura Técnica</h2>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-6">Desarrollado con tecnologías de alto rendimiento</h3>
+                    <p class="text-slate-400 text-base leading-relaxed mb-8">
+                        Ticket Studio Pro combina la fluidez visual de PyQt6 con la estabilidad de SQLite para ofrecer una experiencia nativa fluida en Windows.
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-brand-card border border-brand-border/60">
+                            <i class="fa-brands fa-python text-2xl text-brand-500"></i>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Python 3 & PyQt6</h4>
+                                <p class="text-slate-400 text-xs">Interfaz gráfica nativa con soporte para tema oscuro moderno</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-brand-card border border-brand-border/60">
+                            <i class="fa-solid fa-database text-2xl text-brand-500"></i>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Base de Datos SQLite</h4>
+                                <p class="text-slate-400 text-xs">Almacenamiento local liviano, confiable y rápido</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-brand-card border border-brand-border/60">
+                            <i class="fa-solid fa-box-archive text-2xl text-brand-500"></i>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Instalador Inno Setup</h4>
+                                <p class="text-slate-400 text-xs">Instalación simple en Windows en un solo paso</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 bg-brand-card border border-brand-border rounded-2xl p-6 md:p-8">
+                    <h4 class="text-lg font-bold text-white mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-brand-500"></i>
+                        Requisitos del Sistema & Compatibilidad
+                    </h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm">
+                        <div class="border border-brand-border/60 rounded-xl p-4 bg-slate-950/40">
+                            <span class="text-xs text-slate-400 block mb-1">Sistema Operativo</span>
+                            <span class="text-white font-medium">Windows 10 / 11 (64-bit)</span>
+                        </div>
+                        <div class="border border-brand-border/60 rounded-xl p-4 bg-slate-950/40">
+                            <span class="text-xs text-slate-400 block mb-1">Impresoras Soportadas</span>
+                            <span class="text-white font-medium">Impresoras Térmicas 80mm (USB / POS)</span>
+                        </div>
+                        <div class="border border-brand-border/60 rounded-xl p-4 bg-slate-950/40">
+                            <span class="text-xs text-slate-400 block mb-1">Formatos de Exportación</span>
+                            <span class="text-white font-medium">PDF, PNG e Historial CSV</span>
+                        </div>
+                        <div class="border border-brand-border/60 rounded-xl p-4 bg-slate-950/40">
+                            <span class="text-xs text-slate-400 block mb-1">Conexión a Internet</span>
+                            <span class="text-white font-medium">No requerida (100% Offline)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="descarga" class="py-20 md:py-28 bg-gradient-to-b from-brand-dark to-brand-900/30 border-t border-brand-border/40 text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="w-16 h-16 rounded-2xl bg-brand-600/20 border border-brand-500/30 text-brand-500 flex items-center justify-center text-3xl mx-auto mb-6">
+                <i class="fa-solid fa-rocket"></i>
+            </div>
+            <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-6">¿Listo para agilizar las ventas en tu negocio?</h2>
+            <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto mb-10">
+                Descarga Ticket Studio Pro hoy mismo y experimenta la simplicidad de emitir tickets térmicos profesionales.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://github.com" target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-brand-600 to-brand-500 hover:from-brand-500 hover:to-brand-600 text-white font-bold text-base shadow-xl shadow-brand-600/30 transition-all duration-200 flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-download"></i>
+                    Descargar Ejecutable (.exe)
+                </a>
+                <a href="https://github.com" target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-card hover:bg-slate-800 text-slate-200 border border-brand-border font-semibold text-base transition-all duration-200 flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-github"></i>
+                    Ver Código en GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-brand-border/60 py-12 bg-brand-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-brand-600 flex items-center justify-center text-white font-bold text-sm">
+                    <i class="fa-solid fa-receipt"></i>
+                </div>
+                <span class="text-sm font-semibold text-slate-300">Ticket Studio Pro</span>
+            </div>
+            <p class="text-xs text-slate-400 text-center md:text-left">
+                © 2026 Ticket Studio Pro. Proyecto Open Source para demostración.
+            </p>
+            <div class="flex items-center gap-6 text-slate-400 text-sm">
+                <a href="#caracteristicas" class="hover:text-brand-500 transition-colors">Funcionalidades</a>
+                <a href="#especificaciones" class="hover:text-brand-500 transition-colors">Técnico</a>
+                <a href="https://github.com" target="_blank" class="hover:text-brand-500 transition-colors"><i class="fa-brands fa-github text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function switchTab(tabId) {
+            // Hide all tabs
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => {
+                tab.classList.add('hidden');
+                tab.classList.remove('block');
+            });
+
+            // Reset button styles
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-brand-600', 'text-white', 'shadow-lg', 'shadow-brand-600/30');
+                btn.classList.add('bg-brand-card', 'text-slate-300', 'border', 'border-brand-border');
+            });
+
+            // Show current tab
+            const activeTab = document.getElementById(tabId);
+            if (activeTab) {
+                activeTab.classList.remove('hidden');
+                activeTab.classList.add('block');
+            }
+
+            // Highlight active button
+            const activeBtn = document.getElementById('btn-' + tabId);
+            if (activeBtn) {
+                activeBtn.classList.remove('bg-brand-card', 'text-slate-300', 'border', 'border-brand-border');
+                activeBtn.classList.add('bg-brand-600', 'text-white', 'shadow-lg', 'shadow-brand-600/30');
+            }
+        }
+    </script>
+</body>
+</html>
