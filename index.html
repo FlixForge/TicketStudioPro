@@ -61,8 +61,9 @@
             <div class="flex items-center justify-between h-20">
                 <!-- Logo -->
                 <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-700 to-brand-500 p-2 shadow-lg shadow-brand-600/30 flex items-center justify-center">
-                        <i class="fa-solid fa-receipt text-xl text-white"></i>
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-700 to-brand-500 p-1.5 shadow-lg shadow-brand-600/30 flex items-center justify-center overflow-hidden">
+                        <img src="assets/logo.png" alt="Ticket Studio Pro Logo" class="w-full h-full object-contain" onerror="this.onerror=null; this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <i class="fa-solid fa-receipt text-xl text-white hidden"></i>
                     </div>
                     <div>
                         <span class="text-xl font-bold tracking-tight text-white">Ticket Studio <span class="text-brand-500">Pro</span></span>
@@ -136,7 +137,7 @@
                     <div class="w-12"></div>
                 </div>
                 <div class="overflow-hidden rounded-xl bg-slate-950 border border-brand-border/40 aspect-video relative flex items-center justify-center">
-                    <img src="Pestaña Venta.png" alt="Ticket Studio Pro - Venta" class="w-full h-full object-cover object-top" onerror="this.onerror=null; this.src='https://placehold.co/1200x675/0f172a/3b82f6?text=Ticket+Studio+Pro+-+Vista+de+Venta';">
+                    <img src="assets/venta.png" alt="Ticket Studio Pro - Venta" class="w-full h-full object-cover object-top" onerror="this.onerror=null; this.src='https://placehold.co/1200x675/0f172a/3b82f6?text=Ticket+Studio+Pro+-+Vista+de+Venta';">
                 </div>
             </div>
         </div>
@@ -285,27 +286,27 @@
             <div class="relative max-w-5xl mx-auto rounded-2xl border border-brand-border bg-brand-card overflow-hidden shadow-2xl">
                 <!-- Tab Venta -->
                 <div id="tab-venta" class="tab-content block">
-                    <img src="Pestaña Venta.png" alt="Módulo de Venta" class="w-full h-auto object-cover" onerror="this.onerror=null; this.src='https://placehold.co/1200x675/0f172a/3b82f6?text=Módulo+de+Venta';">
+                    <img src="assets/venta.png" alt="Módulo de Venta" class="w-full h-auto object-cover" onerror="this.onerror=null; this.src='https://placehold.co/1200x675/0f172a/3b82f6?text=M%C3%B3dulo+de+Venta';">
                 </div>
 
                 <!-- Tab Catalogo -->
                 <div id="tab-catalogo" class="tab-content hidden">
-                    <img src="Pestaña Catalogo.png" alt="Módulo de Catálogo" class="w-full h-auto object-cover" onerror="this.onerror=null; this.src='https://placehold.co/1200x675/0f172a/3b82f6?text=Catálogo+de+Productos';">
+                    <img src="assets/catalogo.png" alt="Módulo de Catálogo" class="w-full h-auto object-cover" onerror="this.onerror=null; this.src='https://placehold.co/1200x675/0f172a/3b82f6?text=Cat%C3%A1logo+de+Productos';">
                 </div>
 
                 <!-- Tab Ventana -->
                 <div id="tab-ventana" class="tab-content hidden flex items-center justify-center bg-slate-950 p-6 md:p-12">
-                    <img src="Pestaña Catalogo Ventana.png" alt="Nuevo Producto Modal" class="max-w-lg w-full h-auto rounded-xl border border-brand-border shadow-2xl" onerror="this.onerror=null; this.src='https://placehold.co/600x600/0f172a/3b82f6?text=Formulario+de+Producto';">
+                    <img src="assets/catalogo_ventana.png" alt="Nuevo Producto Modal" class="max-w-lg w-full h-auto rounded-xl border border-brand-border shadow-2xl" onerror="this.onerror=null; this.src='https://placehold.co/600x600/0f172a/3b82f6?text=Formulario+de+Producto';">
                 </div>
 
                 <!-- Tab Historial -->
                 <div id="tab-historial" class="tab-content hidden">
-                    <img src="Pestaña Historil.png" alt="Historial de Ventas" class="w-full h-auto object-cover" onerror="this.onerror=null; this.src='https://placehold.co/1200x675/0f172a/3b82f6?text=Historial+de+Ventas';">
+                    <img src="assets/historial.png" alt="Historial de Ventas" class="w-full h-auto object-cover" onerror="this.onerror=null; this.src='https://placehold.co/1200x675/0f172a/3b82f6?text=Historial+de+Ventas';">
                 </div>
 
                 <!-- Tab Configuracion -->
                 <div id="tab-config" class="tab-content hidden">
-                    <img src="Configuracion.png" alt="Configuración del Sistema" class="w-full h-auto object-cover" onerror="this.onerror=null; this.src='https://placehold.co/1200x675/0f172a/3b82f6?text=Ajustes+y+Ticket';">
+                    <img src="assets/configuracion.png" alt="Configuración del Sistema" class="w-full h-auto object-cover" onerror="this.onerror=null; this.src='https://placehold.co/1200x675/0f172a/3b82f6?text=Ajustes+y+Ticket';">
                 </div>
             </div>
         </div>
@@ -401,8 +402,9 @@
     <footer class="border-t border-brand-border/60 py-12 bg-brand-dark">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
             <div class="flex items-center gap-3">
-                <div class="w-8 h-8 rounded-lg bg-brand-600 flex items-center justify-center text-white font-bold text-sm">
-                    <i class="fa-solid fa-receipt"></i>
+                <div class="w-8 h-8 rounded-lg bg-brand-600 p-1 flex items-center justify-center text-white font-bold text-sm overflow-hidden">
+                    <img src="assets/logo.png" alt="Logo" class="w-full h-full object-contain" onerror="this.onerror=null; this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+                    <i class="fa-solid fa-receipt hidden"></i>
                 </div>
                 <span class="text-sm font-semibold text-slate-300">Ticket Studio Pro</span>
             </div>
