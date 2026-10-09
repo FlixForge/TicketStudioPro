@@ -52,11 +52,19 @@
                 linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
                 linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
         }
+        /* Garantiza que el texto del título siempre sea visible con fallback de color */
+        .gradient-text {
+            color: #60a5fa; /* Fallback si background-clip falla */
+            background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 50%, #818cf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
     </style>
 </head>
 <body class="bg-brand-dark text-slate-100 antialiased selection:bg-brand-600 selection:text-white relative bg-grid min-h-screen">
 
-    <header class="fixed top-0 left-0 w-full z-50 bg-brand-dark/80 backdrop-blur-md border-b border-brand-border/60">
+    <header class="fixed top-0 left-0 w-full z-50 bg-brand-dark/90 backdrop-blur-md border-b border-brand-border/60">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <!-- Logo -->
@@ -72,7 +80,7 @@
                 </a>
 
                 <!-- Nav Desktop -->
-                <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <nav class="flex items-center gap-6 sm:gap-8 text-xs sm:text-sm font-medium text-slate-300">
                     <a href="#caracteristicas" class="hover:text-brand-500 transition-colors">Características</a>
                     <a href="#ticket-muestra" class="hover:text-brand-500 transition-colors">Ticket de Muestra</a>
                     <a href="#capturas" class="hover:text-brand-500 transition-colors">Capturas</a>
@@ -93,13 +101,13 @@
                 Software POS Offline
             </div>
 
-            <!-- Main Title -->
-            <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold text-white tracking-tight leading-none mb-6">
+            <!-- Main Title con visibilidad mejorada -->
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold text-white tracking-tight leading-tight sm:leading-none mb-6">
                 Control total de tu negocio con <br class="hidden sm:inline"/>
-                <span class="bg-clip-text text-transparent bg-gradient-to-r from-brand-500 via-blue-400 to-indigo-400">Tickets Profesionales</span>
+                <span class="gradient-text font-black">Tickets Profesionales</span>
             </h1>
 
-            <p class="max-w-2xl mx-auto text-slate-400 text-base sm:text-lg md:text-xl font-normal leading-relaxed mb-10">
+            <p class="max-w-2xl mx-auto text-slate-300 text-base sm:text-lg md:text-xl font-normal leading-relaxed mb-10">
                 Diseñado para agilizar ventas, gestionar tu inventario con códigos de barra y generar e imprimir tickets termales de 80mm de forma instantánea.
             </p>
 
@@ -123,7 +131,7 @@
                         <span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
                         <span class="w-3 h-3 rounded-full bg-green-500/80 inline-block"></span>
                     </div>
-                    <span class="text-xs text-slate-400 font-mono">Ticket Studio Pro - Vista Principal (Venta)</span>
+                    <span class="text-xs text-slate-300 font-mono">Ticket Studio Pro - Vista Principal (Venta)</span>
                     <div class="w-12"></div>
                 </div>
                 <div class="overflow-hidden rounded-xl bg-slate-950 border border-brand-border/40 aspect-video relative flex items-center justify-center">
@@ -258,7 +266,7 @@
                         Recibos limpios, claros y <span class="text-brand-500">altamente profesionales</span>
                     </h2>
                     <p class="text-slate-300 text-base leading-relaxed">
-                        Ticket Studio Pro ajusta dinámicamente cada sección del ticket térmico para garantizar una lectura imprecisa en impresoras de 80mm. 
+                        Ticket Studio Pro ajusta dinámicamente cada sección del ticket térmico para garantizar una lectura imprecisa en impresoras de 80mm.
                     </p>
 
                     <div class="space-y-4 pt-2">
@@ -472,28 +480,28 @@
 
     <script>
         function switchTab(tabId) {
-            // Hide all tabs
+            // Oculta todas las pestañas
             const tabs = document.querySelectorAll('.tab-content');
             tabs.forEach(tab => {
                 tab.classList.add('hidden');
                 tab.classList.remove('block');
             });
 
-            // Reset button styles
+            // Resetea los botones
             const buttons = document.querySelectorAll('.tab-btn');
             buttons.forEach(btn => {
                 btn.classList.remove('bg-brand-600', 'text-white', 'shadow-lg', 'shadow-brand-600/30');
                 btn.classList.add('bg-brand-card', 'text-slate-300', 'border', 'border-brand-border');
             });
 
-            // Show current tab
+            // Muestra la pestaña activa
             const activeTab = document.getElementById(tabId);
             if (activeTab) {
                 activeTab.classList.remove('hidden');
                 activeTab.classList.add('block');
             }
 
-            // Highlight active button
+            // Resalta el botón activo
             const activeBtn = document.getElementById('btn-' + tabId);
             if (activeBtn) {
                 activeBtn.classList.remove('bg-brand-card', 'text-slate-300', 'border', 'border-brand-border');
