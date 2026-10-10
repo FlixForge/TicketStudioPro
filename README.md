@@ -1,4 +1,4 @@
-<h1 align="center">🎟️ Ticket Studio Pro</h1>
+# 🎟️ Ticket Studio Pro
 
 <div align="center">
 
@@ -17,7 +17,7 @@
 
 ## 📌 Descripción General
 
-**Ticket Studio Pro** es un sistema de Punto de Venta (POS) de escritorio con interfaz oscura moderna, rápida y adaptable. Está pensado para pequeños y medianos comercios que buscan emitir tickets de compra impresos o digitales en segundos, gestionar productos con código de barras y llevar un control claro de sus ingresos.
+**Ticket Studio Pro** es un sistema de Punto de Venta (POS) de escritorio con interfaz oscura moderna, rápida y adaptable. Está pensado para pequeños y medianos comercios que buscan emitir tickets de compra impresos o digitales en segundos, gestionar productos con código de barras, controlar cortes de caja, administrar cajeros y llevar un control claro de sus ingresos.
 
 Este repositorio corresponde a la **versión de demostración del software y presentación del proyecto**.
 
@@ -26,6 +26,8 @@ Este repositorio corresponde a la **versión de demostración del software y pre
 ## ✨ Características Principales
 
 * 🚀 **Módulo de Venta Inmediata:** Cobro fluido en caja con calculo de cambio instantáneo, atajos rápidos de efectivo (`+$50`, `+$100`, etc.), acceso táctil a productos favoritos y búsqueda por lector de código de barras.
+* 💵 **Corte de Caja:** Control completo de apertura y cierre de turno, cálculo de efectivo esperado, desglose por ventas en efectivo, tarjetas y transferencias, registro de entradas/retiros, control de efectivo físico real y detección de sobrantes o faltantes, además de consulta de cortes anteriores.
+* 👥 **Gestión de Cajeros y Accesos:** Registro de operadores, activación o desactivación de cuentas, asignación de roles de cajero o administrador, y control estricto de acceso mediante PIN numérico desde la sección de configuración.
 * 📄 **Tickets Termales de 80mm:** Renderizado en tiempo real de recibos con soporte para exportación directa a **PDF** o imágenes **PNG** de alta calidad.
 * 🏷️ **Catálogo de Productos & Generador EAN-13:** Control de inventarios con sistema de alerta de stock mínimo, calculador automático de margen de ganancias e integración de generador de código de barras estándar **EAN-13**.
 * 📊 **Historial Comercial & Exportación CSV:** Filtros de ingresos por rango de fechas, resumen de métodos de pago (Efectivo, Tarjeta, Transferencia), control de IVA retenido y exportación directa de reportes a Excel/CSV.
@@ -43,14 +45,21 @@ Este repositorio corresponde a la **versión de demostración del software y pre
 
 ---
 
-### 📦 2. Catálogo e Inventario
+### 💵 2. Cortes de Caja
+> Pestaña dedicada al control de apertura y cierre de turno, arqueo de caja, desglose detallado de cobros y consulta del historial de cortes.
+
+![Cortes de Caja](assets/caja.png)
+
+---
+
+### 📦 3. Catálogo e Inventario
 > Vista de productos con indicadores visuales de stock, filtrado por categorías y vista previa del ticket comercial.
 
 ![Catálogo e Inventario](assets/catalogo.png)
 
 ---
 
-### ➕ 3. Formulario de Producto & Creador de Código de Barras EAN-13
+### ➕ 4. Formulario de Producto & Creador de Código de Barras EAN-13
 > Alta de artículos con cálculo de margen estimado, definición de stock mínimo para alertas y generador automático de código EAN-13.
 
 <div align="center">
@@ -59,14 +68,23 @@ Este repositorio corresponde a la **versión de demostración del software y pre
 
 ---
 
-### 📈 4. Historial de Ventas & Totales
+### 👥 5. Gestión de Cajeros y Accesos
+> Módulo dentro de Ajustes/Configuración para registrar cajeros, asignar contraseñas PIN, definir roles de seguridad y activar o desactivar cuentas.
+
+<div align="center">
+  <img src="assets/gestion-cajeros.png" alt="Gestión de Cajeros" width="650" />
+</div>
+
+---
+
+### 📈 6. Historial de Ventas & Totales
 > Consulta de transacciones pasadas, desglose por IVA retenido, métodos de pago y exportación de reportes tabulares a CSV.
 
 ![Historial de Ventas](assets/historial.png)
 
 ---
 
-### ⚙️ 5. Configuración Comercial & Estilo del Ticket
+### ⚙️ 7. Configuración Comercial & Estilo del Ticket
 > Configuración completa de la identidad del negocio: carga de logotipo, dirección, QR personalizado, fuentes y tamaño de papel.
 
 ![Configuración](assets/configuracion.png)
