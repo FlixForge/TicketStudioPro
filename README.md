@@ -1,8 +1,8 @@
-# 🎟️ Ticket Studio Pro
-
 <div align="center">
 
   <img src="assets/logo.png" alt="Ticket Studio Pro Logo" width="140" />
+
+  # Ticket Studio Pro
 
   ### **Sistema POS de Escritorio & Generación de Tickets Térmicos**
   *Una solución rápida, moderna y 100% offline diseñada para el control total de ventas e inventario.*
