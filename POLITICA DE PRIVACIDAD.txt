@@ -1,0 +1,32 @@
+POLITICA DE PRIVACIDAD Y TRATAMIENTO DE DATOS LOCALES
+TICKET STUDIO PRO
+======================================================
+
+1. ARQUITECTURA DE ALMACENAMIENTO EXCLUSIVAMENTE LOCAL
+------------------------------------------------------
+Ticket Studio Pro opera bajo un modelo de arquitectura desconectada
+("Offline-First"). Toda la informacion comercial, catalogos, registros de ventas,
+folios, precios, datos de clientes y configuraciones operativas se almacenan unica
+y exclusivamente de forma local en el archivo de base de datos ("ticket_studio.db")
+residente en el almacenamiento fisico del usuario.
+
+2. AUSENCIA TOTAL DE TELEMETRIA Y TRANSMISION REMOTA
+----------------------------------------------------
+El desarrollador NO recopila, transmite, sincroniza, monitorea, procesa, vende ni
+almacena ningun tipo de informacion tecnica, comercial o de identificacion generada
+dentro de la aplicacion. No existen servidores centrales, servicios en la nube ni
+bases de datos remotas vinculadas a este software.
+
+3. CUSTODIA Y RESPONSABILIDAD DE COPIAS DE SEGURIDAD (BACKUPS)
+--------------------------------------------------------------
+La integridad, resguardo, cifrado, privacidad y custodia del archivo de base de
+datos local ("ticket_studio.db") recaen de manera integral sobre el usuario. El
+desarrollador no asume responsabilidad alguna por la perdida, corrupcion o borrado
+accidental de la informacion derivado de ataques maliciosos (malware), fallas
+fisicas de almacenamiento, formateos o negligencia en el mantenimiento informatico.
+
+4. CUMPLIMIENTO CON TERCEROS
+----------------------------
+El usuario es el unico responsable de garantizar que los datos recolectados de
+sus clientes finales y registrados en los comprobantes cumplan con las leyes de
+proteccion de datos personales vigentes en su respectivo territorio.

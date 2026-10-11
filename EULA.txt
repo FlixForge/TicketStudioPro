@@ -1,0 +1,52 @@
+ACUERDO DE LICENCIA DE USUARIO FINAL Y TERMINOS DE SERVICIO (EULA)
+TICKET STUDIO PRO
+=====================================================================
+
+POR FAVOR, LEA DETENIDAMENTE ESTE CONTRATO DE LICENCIA ANTES DE INSTALAR,
+COPIAR O UTILIZAR EL SOFTWARE "TICKET STUDIO PRO". LA INSTALACION, EJECUCION
+O USO DE ESTA APLICACION IMPLICA LA ACEPTACION PLENA, INCONDICIONAL Y SIN
+RESERVAS DE TODOS Y CADA UNO DE LOS TERMINOS Y CONDICIONES AQUI ESTABLECIDOS.
+
+1. OTORGAMIENTO DE LICENCIA LIMITADA Y PROPIEDAD INTELECTUAL
+------------------------------------------------------------
+Ticket Studio Pro otorga al usuario una licencia no exclusiva, limitada,
+revocable e intransferible para el uso personal o comercial interno del software
+en una o mas unidades de computo de su propiedad. Todos los derechos de propiedad
+intelectual, marcas, disenos, codigo fuente, ejecutables e interfaces pertenecen
+de forma exclusiva al desarrollador. Se prohibe estrictamente la ingenieria
+inversa, descompilacion, redistribucion no autorizada, sublicenciamiento o
+modificacion de la aplicacion.
+
+2. NATURALEZA DEL SOFTWARE Y DESLINDE DE RESPONSABILIDAD FISCAL / TRIBUTARIA
+----------------------------------------------------------------------------
+Ticket Studio Pro es una herramienta informatica independiente orientada al
+control interno comercial, administracion de notas y maquetacion de comprobantes
+de impresion termica. EL SOFTWARE NO CONSTITUYE UN SISTEMA DE FACTURACION FISCAL
+OFICIAL NI SUSTITUYE LAS OBLIGACIONES TRIBUTARIAS, REGISTROS CONTABLES O
+DECLARACIONES DE IMPUESTOS IMPUESTAS POR LAS AUTORIDADES FISCALES COMPETENTES
+DE CUALQUIER JURISDICCION. El usuario es el unico y exclusivo responsable de
+garantizar el cumplimiento legal, tributario, contable e impositivo de sus
+transacciones comerciales.
+
+3. EXCLUSION DE GARANTIAS Y PROVISION "TAL CUAL" (AS-IS)
+--------------------------------------------------------
+EL SOFTWARE SE PROPORCIONA "TAL CUAL" Y "SEGUN DISPONIBILIDAD", SIN GARANTIAS
+DE NINGUN TIPO, YA SEAN EXPRESAS, IMPLICITAS O LEGALES, INCLUYENDO, SIN
+LIMITACION, GARANTIAS DE COMERCIALIZACION, IDONEIDAD PARA UN PROPOSITO PARTICULAR,
+FUNCIONAMIENTO ININTERRUMPIDO O AUSENCIA DE ERRORES. EL USUARIO ASUME TODOS LOS
+RIESGOS ASOCIADOS A LA CALIDAD, RENDIMIENTO Y USO DEL SOFTWARE.
+
+4. LIMITACION EXPRESA DE RESPONSABILIDAD Y AUSENCIA DE LUCRO CESANTE
+--------------------------------------------------------------------
+EN NINGUN CASO EL DESARROLLADOR O SUS AFILIADOS SERAN RESPONSABLES ANTE EL
+USUARIO O TERCEROS POR DANOS DIRECTOS, INDIRECTOS, INCIDENTALES, ESPECIALES,
+PUNITIVOS O CONSECUENTES (INCLUYENDO, ENTRE OTROS, PERDIDA DE GANANCIAS, LUCRO
+CESANTE, INTERRUPCION DEL NEGOCIO, PERDIDA O CORRUPCION DE DATOS, FALLAS DE
+HARDWARE O RECLAMACIONES DE TERCEROS) QUE SURJAN DE LA INSTALACION, USO O
+INCAPACIDAD DE USO DE ESTE SOFTWARE, INCLUSO SI SE HA ADVERTIDO DE LA POSIBILIDAD
+DE TALES DANOS.
+
+5. ACEPTACION EXPRESA
+---------------------
+El uso continuado de la aplicacion confirma que el usuario ha leido, comprendido
+y aceptado obligatoriamente la totalidad de las clausulas de este acuerdo legal.
