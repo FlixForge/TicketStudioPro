@@ -6,6 +6,9 @@
   *Una solución rápida, moderna y 100% offline diseñada para el control total de ventas e inventario.*
   
  <img src="assets/presentacion.png" alt="Ticket Studio Pro Presentación" width="850" />
+
+ [![Demo Live](https://img.shields.io/badge/🌐_Landing_Page-Ver_Demostración-2563eb?style=for-the-badge)](https://FlixForge.github.io/TicketStudioPro/)
+ [![Estado](https://img.shields.io/badge/Estado-Demostración_Oficial-blue?style=for-the-badge)](#)
  
 </div>
 
