@@ -12,7 +12,7 @@
 
 ---
 <p align="center">
-  <img src="assets/abarrotes.png" alt="Abarrotes" width="800">
+  <img src="assets/presentacion.png" alt="Abarrotes" width="800">
 </p>
 
 
