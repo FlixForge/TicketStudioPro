@@ -102,12 +102,33 @@ Este repositorio corresponde a la **versión de demostración del software y pre
 
 ---
 
-## 📄 Licencia
 
-Este proyecto y sus materiales de demostración están bajo la Licencia **MIT**. Consulta el archivo `LICENSE` para más información.
+## 💳 Licencias y Adquisición Comercial
+
+**Ticket Studio Pro** es un sistema de pago único (licencia vitalicia) sin rentas ni mensualidades obligatorias. El software se entrega con instalador ejecutable y/o servicio de activación.
 
 <div align="center">
 
-Desarrollado para demostración técnica de **Ticket Studio Pro**.
+| Plan / Licencia | Precio Regular | Precio de Oferta | Incluye / Beneficios |
+| :--- | :---: | :---: | :--- |
+| **Licencia Inicial / Estándar** <br> *(1 PC)* | ~~ $1,299 MXN ~~ | **$499 MXN** <br> *(Pago Único)* | • Licencia permanente para 1 Computadora/PC.<br>• Módulos completos: Ventas, Inventario, Caja, Historial y Cajeros.<br>• Soporte para lector de código de barras e impresora de 80mm.<br>• Funcionamiento 100% Offline (Sin Internet).<br>• Actualizaciones de la versión 2.0 incluidas. |
+| **Licencia Pro con Asistencia** <br> *(1 PC + Instalación)* | ~~ $1,899 MXN ~~ | **$699 MXN** <br> *(Pago Único)* | • **Todo lo de la Licencia Estándar**.<br>• **Soporte técnico personalizado** e instalación remota.<br>• Carga de logotipo, datos fiscales e integración de impresora.<br>• Asistencia directa para puesta en marcha de tu negocio. |
+
+</div>
+
+> 📩 **¿Interesado en adquirir una licencia o instalación personalizada?**  
+> Ponte en contacto para adquirir tu software o coordinar la instalación remota.
+
+---
+
+## 📄 Licencia de Uso Comercial
+
+Este software se comercializa bajo **Licencia Comercial Propietaria por Equipo / Estación de Trabajo**. Todos los derechos de distribución y venta están reservados por el autor. Consulta con el desarrollador para ventas por volumen o licencias multinegocio.
+
+<div align="center">
+
+Desarrollado para **Ticket Studio Pro** — Sistema de Punto de Venta Comercial.
+
+</div>
 
 </div>
