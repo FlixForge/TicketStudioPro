@@ -16,7 +16,7 @@
 <p align="center">
   <img src="assets/abarrotes.png" alt="Abarrotes" width="800">
 </p>
----
+
 
 ## 📌 Descripción General
 
