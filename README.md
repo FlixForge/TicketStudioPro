@@ -2,7 +2,7 @@
 
 <img src="assets/logotexto.png" alt="Ticket Studio Pro Logo" width="350" />
 
-  ### **Sistema POS de Escritorio & Generación de Tickets Térmicos**
+  ### **Sistema Punto de Ventas & Generación de Tickets**
   *Una solución rápida, moderna y 100% offline diseñada para el control total de ventas e inventario.*
 
  [![Demo Live](https://img.shields.io/badge/🌐_Landing_Page-Ver_Demostración-2563eb?style=for-the-badge)](https://FlixForge.github.io/TicketStudioPro/)
